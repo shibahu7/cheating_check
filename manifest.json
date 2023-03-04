@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "浮気チェッカー",
+    "version": "1.0.0",
+    "description": "浮気してないか？いつもお前を見てるぞ",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://twitter.com/messages/*-*"
+            ],
+            "js": [
+                "scripts/content.js"
+            ]
+        }
+    ]
+}
